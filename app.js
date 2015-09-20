@@ -27,8 +27,8 @@ function periodicActivity(){
 	//状態が変化したときだけHueにHTTPリクエストを飛ばす
   if(stateFlag[0] !== stateFlag[1]){
     ctrlHue(HUEID,motion);
+		if(motion) ditectCount++; //検知した時にカウント
     stateFlag[0] = stateFlag[1];
-		ditectCount++;
   }
 
 	setTimeout(periodicActivity,1000);
