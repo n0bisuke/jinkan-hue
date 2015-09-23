@@ -10,7 +10,7 @@ myDigitalPin.dir(m.DIR_IN);
 
 function periodicActivity(){
 	var date = new Date(); //時間を扱う
-	if(date.getSeconds() === 0 || date.getSeconds() === 30){ //時間が来たら保存して初期化
+	if(date.getSeconds() === 0){ //時間が来たら保存して初期化
 		logging.save(ditectCount);
 		ditectCount = 0;
 	}
