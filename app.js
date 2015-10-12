@@ -7,7 +7,7 @@ var stateFlag = [false,false]; //人感センサの状態保存
 var HUEID = 4; //操作するHueのID
 var ditectCount = 0; //時間毎の検知回数
 myDigitalPin.dir(m.DIR_IN);
-
+console.log();
 function periodicActivity(){
 	var date = new Date(); //時間を扱う
 	if(date.getSeconds() === 0){ //時間が来たら保存して初期化

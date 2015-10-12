@@ -11,5 +11,5 @@ npm i
 ## start
 
 ```
-node jinkan-hue
+npm start
 ```
