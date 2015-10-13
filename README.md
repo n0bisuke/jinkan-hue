@@ -2,6 +2,14 @@
 
 Node.jsで人感センサーとHueの連携
 
+## 準備
+
+デーモン化用
+
+```
+npm i -g pm2
+```
+
 ## install
 
 ```
@@ -17,12 +25,11 @@ node app
 ##デーモン化
 
 ```
-npm deamon
+pm2 start app.js
 ```
 
 確認
 
 ```
-npm pm2-list
-npm pm2-logs
+pm2 logs
 ```
